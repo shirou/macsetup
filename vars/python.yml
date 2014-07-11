@@ -1,0 +1,3 @@
+mac_install_python:
+  - virtualenv
+  - virtualenvwrapper

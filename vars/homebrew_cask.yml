@@ -1,0 +1,27 @@
+mac_install_cask:
+  - google-japanese-ime
+  - google-chrome
+  - firefox
+# Util
+  - alfred
+  - evernote
+  - dropbox
+  - the-unarchiver
+  - keepassx
+  - skype
+  - caffeine
+# Chat
+  - slack
+  - hipchat
+# Develop
+  - iterm2
+  - vagrant
+  - virtualbox
+  - sourcetree
+  - kobito
+  - github
+  - dash
+#  - emacs
+# Java
+  - java
+  - eclipse-java

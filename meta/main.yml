@@ -1,0 +1,12 @@
+---
+galaxy_info:
+  author: "WAKAYAMA Shirou"
+  license: 2-clause BSD
+  min_ansible_version: 1.6
+  platforms:
+   - name: Mac OS X
+     versions:
+      - 10.9
+  categories:
+   - development
+dependencies: []

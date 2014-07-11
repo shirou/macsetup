@@ -1,0 +1,7 @@
+- name: tap new homebrew repos
+  homebrew_tap: tap={{item}} state=present
+  with_items:
+    - caskroom/cask
+- name: install via cask
+  homebrew_cask: name={{ item }} state=present
+  with_items: mac_install_cask

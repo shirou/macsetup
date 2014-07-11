@@ -1,0 +1,11 @@
+mac_install_homebrew:
+  - zsh
+  - git
+  - mercurial
+  - vim
+  - go
+  - lv
+  - python
+  - tig
+  - jq
+  - wget

@@ -1,0 +1,9 @@
+- name: including vars files
+  include_vars: "{{ item }}"
+  with_fileglob:
+    - ../vars/*.yml
+
+- include: install_homebrew.yml
+- include: install_homebrew_cask.yml
+- include: install_python.yml
+
