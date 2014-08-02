@@ -16,13 +16,13 @@ Nothing yet.
 Example
 ---------------
 
-::
-
+```
   - hosts: localhost
     connection: local
     sudo: yes
     roles:
         - shirou.macsetup
+```
 
 Dependencies
 -----------------
