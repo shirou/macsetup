@@ -9,3 +9,16 @@ mac_install_homebrew:
   - tig
   - jq
   - wget
+  - ag
+  - tree
+  - imagemagick
+# Databases
+  - mysql
+  - postgresql
+# MQTT
+  - mosquitto
+
+# packages with install options
+mac_install_homebrew_with_options:
+  wireshark: --devel --with-qt --with-lua
+  emacs: --cocoa --srgb --with-gnutls --japanese

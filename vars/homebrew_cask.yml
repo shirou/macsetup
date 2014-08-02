@@ -10,7 +10,9 @@ mac_install_cask:
   - keepassx
   - skype
   - caffeine
+  - macs-fan-control
 # Chat
+  - skype
   - slack
   - hipchat
 # Develop
@@ -21,6 +23,8 @@ mac_install_cask:
   - kobito
   - github
   - dash
+  - totalfinder
+  - totalterminal
 #  - emacs
 # Java
   - java

@@ -1,7 +1,7 @@
 setup on Mac OS X
 =====================
 
-This role will setup your Mac OS X
+This role will setup your Mac OS X.
 
 Requirements
 ---------------------
@@ -16,11 +16,13 @@ Nothing yet.
 Example
 ---------------
 
-    - hosts: localhost
-      connection: local
-      sudo: yes
-      roles:
-          - shirou.macsetup
+::
+
+  - hosts: localhost
+    connection: local
+    sudo: yes
+    roles:
+        - shirou.macsetup
 
 Dependencies
 -----------------

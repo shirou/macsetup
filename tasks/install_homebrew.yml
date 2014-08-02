@@ -1,14 +1,22 @@
 - name: check homebrew installed or not
-  command: test -e /usr/local/bin/brew
+  command: "[ -e /usr/local/bin/brew ]"
   register: homebrew_installed
   ignore_errors: yes
 - name: installing homebrew
   raw: ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
   when: homebrew_installed|failed
 - name: update homebrew packages
-  homebrew: update_homebrew=yes 
+  homebrew: update_homebrew=yes
 
 - name: install via homebrew
   sudo: no
   homebrew: name={{ item }} state=present
   with_items: mac_install_homebrew
+
+- name: install homebrew with option
+  sudo: no
+  homebrew:
+    name={{ item.key }}
+    state=present
+    install_options="{{ item.value }}"
+  with_dict: mac_install_homebrew_with_options
